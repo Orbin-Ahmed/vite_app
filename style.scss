@@ -117,6 +117,12 @@ li {
     align-items: center;
 }
 
+.justify-content-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .justify-content-center {
     display: flex;
     justify-content: center;
@@ -204,4 +210,48 @@ li {
 }
 .pb-0 {
     padding-bottom: 0;
+}
+
+.promotional-banner {
+    margin-top: 5rem;
+    p {
+        margin-top: 1rem;
+        color: white;
+    }
+}
+
+.date-remaining {
+    background-color: #2e302f;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+
+.promo-msg {
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.promo-offer {
+    border-bottom: 20px solid #e28408;
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    height: 0;
+    padding: 0 0.4rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 3rem;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 500;
 }
