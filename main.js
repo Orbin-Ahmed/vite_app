@@ -46,7 +46,7 @@ document.querySelector('#app').innerHTML = `
       <div class="container justify-content-center pt-0 pb-0">
         <div class="card-text-column">
           <ul class="card-text">
-            <li>PC</li>
+            <li onclick="toggle_card();">PC</li>
             <li>Playstation</li>
             <li>Xbox</li>
             <li>Nintendo</li>
