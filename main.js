@@ -13,7 +13,7 @@ const posterContent_1 = generatePoster(data_1);
 const data_2 = {
   image: './poster_2.png',
   discount: 50,
-  title: 'Call of Duty',
+  title: 'Dishonerd',
   price: 20
 };
 const posterContent_2 = generatePoster(data_2);
@@ -21,7 +21,7 @@ const posterContent_2 = generatePoster(data_2);
 const data_3 = {
   image: './poster_3.png',
   discount: 16,
-  title: 'Call of Duty',
+  title: 'Manastorm',
   price: 129.99
 };
 const posterContent_3 = generatePoster(data_3);

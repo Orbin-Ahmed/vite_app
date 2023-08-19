@@ -8,7 +8,7 @@
             <span>${t.title}</span>
             <span>${t.price}$</span>
         </div>
-      </div>`}const c={image:"./poster_1.png",discount:26,title:"Call of Duty",price:99.98},l=o(c),d={image:"./poster_2.png",discount:50,title:"Call of Duty",price:20},p=o(d),u={image:"./poster_3.png",discount:16,title:"Call of Duty",price:129.99},m=o(u);document.querySelector("#app").innerHTML=`
+      </div>`}const c={image:"./poster_1.png",discount:26,title:"Call of Duty",price:99.98},l=o(c),d={image:"./poster_2.png",discount:50,title:"Dishonerd",price:20},p=o(d),u={image:"./poster_3.png",discount:16,title:"Manastorm",price:129.99},m=o(u);document.querySelector("#app").innerHTML=`
     <div class="background">
       <div class="container justify-content-between">
         <div class="column-2 logo"><img src="https://static.electronicfirst.com/website/uploads/2023/04/18/header_logo_glow_1681808133_643e5b05bcb0e.webp"></div>
