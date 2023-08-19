@@ -356,6 +356,80 @@ li {
 }
 
 .poster-img {
-    width: fit-content;
-    width: -webkit-fill-available;
+    width: 21.875rem;
+    height: 12.5rem;
+}
+
+.card-details {
+    margin-top: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-details span {
+    color: white;
+    opacity: 0.7;
+    &:nth-child(1) {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    &:nth-child(2) {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 3px;
+}
+
+// Media Quaries
+
+@media only screen and (max-width: 1800px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    html {
+        font-size: 7px;
+    }
 }

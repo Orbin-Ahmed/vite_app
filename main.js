@@ -1,4 +1,30 @@
 import './style.scss'
+import generatePoster from './poster.js';
+
+
+const data_1 = {
+  image: './poster_1.png',
+  discount: 26,
+  title: 'Call of Duty',
+  price: 99.98
+};
+const posterContent_1 = generatePoster(data_1);
+
+const data_2 = {
+  image: './poster_2.png',
+  discount: 50,
+  title: 'Call of Duty',
+  price: 20
+};
+const posterContent_2 = generatePoster(data_2);
+
+const data_3 = {
+  image: './poster_3.png',
+  discount: 16,
+  title: 'Call of Duty',
+  price: 129.99
+};
+const posterContent_3 = generatePoster(data_3);
 
 document.querySelector('#app').innerHTML = `
     <div class="background">
@@ -43,6 +69,19 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="early-access-column early-access-outer-border">
           <p class="early-access">+EARLY ACCESS</p>
+        </div>
+      </div>
+    </div>
+    <div class="container justify-content-center mt-7">
+      <div class="card-column">
+        <div class="group-container">
+          <span class="trendy">Trending</span>
+          <button class="btn-primary">View all</button>
+        </div>
+        <div class="container p-0">
+        ${posterContent_1}
+        ${posterContent_2}
+        ${posterContent_3}
         </div>
       </div>
     </div>
