@@ -1,32 +1,14 @@
-import './style.scss'
-import generatePoster from './poster.js';
-
-
-const data_1 = {
-  image: './poster_1.png',
-  discount: 26,
-  title: 'Call of Duty',
-  price: 99.98
-};
-const posterContent_1 = generatePoster(data_1);
-
-const data_2 = {
-  image: './poster_2.png',
-  discount: 50,
-  title: 'Dishonerd',
-  price: 20
-};
-const posterContent_2 = generatePoster(data_2);
-
-const data_3 = {
-  image: './poster_3.png',
-  discount: 16,
-  title: 'Manastorm',
-  price: 129.99
-};
-const posterContent_3 = generatePoster(data_3);
-
-document.querySelector('#app').innerHTML = `
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))l(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&l(o)}).observe(document,{childList:!0,subtree:!0});function a(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(s){if(s.ep)return;s.ep=!0;const t=a(s);fetch(s.href,t)}})();function r(e){return`
+      <div class="column-4 mt-2">
+        <div class="img-container">
+            <img src="${e.image}" class="poster-img">
+            <div class="bottom-left promo-offer">${e.discount}%</div>
+        </div>
+        <div class="group-container card-details">
+            <span>${e.title}</span>
+            <span>${e.price}$</span>
+        </div>
+      </div>`}const n={image:"./poster_1.png",discount:26,title:"Call of Duty",price:99.98},c=r(n),d={image:"./poster_2.png",discount:50,title:"Dishonerd",price:20},p=r(d),m={image:"./poster_3.png",discount:16,title:"Manastorm",price:129.99},g=r(m);document.querySelector("#app").innerHTML=`
     <div class="background">
       <div class="container justify-content-between">
         <div class="column-2 logo"><img src="https://static.electronicfirst.com/website/uploads/2023/04/18/header_logo_glow_1681808133_643e5b05bcb0e.webp"></div>
@@ -79,9 +61,9 @@ document.querySelector('#app').innerHTML = `
           <button class="btn-primary">View all</button>
         </div>
         <div class="container p-0">
-        ${posterContent_1}
-        ${posterContent_2}
-        ${posterContent_3}
+        ${c}
+        ${p}
+        ${g}
         </div>
       </div>
     </div>
@@ -120,4 +102,4 @@ document.querySelector('#app').innerHTML = `
         <div class="platform-logo"><img src="/steam.png">Steam</div>
       </div>
     </div>
-`
+`;
