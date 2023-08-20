@@ -89,35 +89,35 @@ document.querySelector('#app').innerHTML = `
       <p class="column-6" style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;">Platform</p>
       <p class="column-6" style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;">View all</p>
       <div class="column-4" style="margin-top: 1rem;">
-        <div class="platform-logo"><img src="/steam.png">Steam</div>
-        <div class="platform-logo"><img src="/battle_net.png">Battle.net</div>
-        <div class="platform-logo"><img src="/micro_logo.png">Microsoft Store</div>
+        <div class="platform-logo"><img src="./steam.png">Steam</div>
+        <div class="platform-logo"><img src="./battle_net.png">Battle.net</div>
+        <div class="platform-logo"><img src="./micro_logo.png">Microsoft Store</div>
       </div>
 
       <div class="column-4" style="margin-top: 1rem;">
-        <div class="platform-logo"><img src="/steam.png">Steam</div>
-        <div class="platform-logo"><img src="/battle_net.png">Battle.net</div>
-        <div class="platform-logo"><img src="/micro_logo.png">Microsoft Store</div>
+        <div class="platform-logo"><img src="./steam.png">Steam</div>
+        <div class="platform-logo"><img src="./battle_net.png">Battle.net</div>
+        <div class="platform-logo"><img src="./micro_logo.png">Microsoft Store</div>
       </div>
 
       <div class="column-4" style="margin-top: 1rem;">
-        <div class="platform-logo"><img src="/steam.png">Steam</div>
-        <div class="platform-logo"><img src="/battle_net.png">Battle.net</div>
-        <div class="platform-logo"><img src="/micro_logo.png">Microsoft Store</div>
+        <div class="platform-logo"><img src="./steam.png">Steam</div>
+        <div class="platform-logo"><img src="./battle_net.png">Battle.net</div>
+        <div class="platform-logo"><img src="./micro_logo.png">Microsoft Store</div>
       </div>
 
       <p class="column-6" style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;">Prepaid cards</p>
       <p class="column-6" style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;display: flex;justify-content: end;">View all</p>
       <div class="column-4" style="margin-top: 1rem;">
-        <div class="platform-logo"><img src="/steam.png">Steam</div>
+        <div class="platform-logo"><img src="./steam.png">Steam</div>
       </div>
 
       <div class="column-4" style="margin-top: 1rem;">
-        <div class="platform-logo"><img src="/steam.png">Steam</div>
+        <div class="platform-logo"><img src="./battle_net.png">Steam</div>
       </div>
 
       <div class="column-4" style="margin-top: 1rem;">
-        <div class="platform-logo"><img src="/steam.png">Steam</div>
+        <div class="platform-logo"><img src="./micro_logo.png">Steam</div>
       </div>
     </div>
 `
