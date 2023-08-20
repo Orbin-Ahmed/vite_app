@@ -54,7 +54,7 @@ body {
     flex-basis: 0;
     flex-grow: 1;
     flex: 0 0 33.33%;
-    max-width: 33.33%;
+    width: 33.33%;
 }
 
 .column-5 {
@@ -193,6 +193,8 @@ li {
             span {
                 position: absolute;
                 top: 17px;
+                font-size:1.5rem;
+                line-height: 1;
             }
         }
         
@@ -454,15 +456,18 @@ li {
     }
 }
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1570px) {
     html {
         font-size: 13px;
     }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1460px) {
     html {
         font-size: 11px;
+    }
+    .card-text li:nth-child(5) span {
+        top: 12px;
     }
 }
 
@@ -478,8 +483,63 @@ li {
     }
 }
 
+@media only screen and (max-width: 1050px) {
+    html {
+        font-size: 8px;
+    }
+    .card-text li:nth-child(5) span {
+        top: 9px;
+    }
+}
+
 @media only screen and (max-width: 950px) {
     html {
         font-size: 7px;
+    }
+    .card-text li:nth-child(5) span {
+        top: 8px;
+    }
+}
+
+@media only screen and (max-width: 788px) {
+    html {
+        font-size: 6px;
+    }
+
+    .card-text li:nth-child(5) span {
+        top: 7px;
+    }
+
+    .responsive-container {
+        flex-direction: column;
+        .column-4 {
+            width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    .poster-img {
+        width: fit-content;
+        width: -webkit-fill-available;
+        height: auto;
+    }
+    .responsive {
+        flex-direction: column;
+    }
+    .card-text-column {
+        max-width: 36%;
+        flex: 0 0 36%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card-text-column {
+        max-width: 40%;
+        flex: 0 0 40%;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .card-text-column {
+        max-width: 50%;
+        flex: 0 0 50%;
     }
 }

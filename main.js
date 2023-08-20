@@ -78,7 +78,7 @@ document.querySelector('#app').innerHTML = `
           <span class="trendy">Trending</span>
           <button class="btn-primary">View all</button>
         </div>
-        <div class="container p-0">
+        <div class="container p-0 responsive-container">
         ${posterContent_1}
         ${posterContent_2}
         ${posterContent_3}
