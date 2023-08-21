@@ -43,7 +43,7 @@ document.querySelector('#app').innerHTML = `
           <span class="material-symbols-outlined icon border">person</span>
         </div>
       </div>
-      <div class="container justify-content-center pt-0 pb-0">
+      <div class="container justify-content-center pt-0 pb-0 responsive">
         <div class="card-text-column">
           <ul class="card-text">
             <li onclick="toggle_card();">PC</li>

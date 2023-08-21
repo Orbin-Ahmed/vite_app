@@ -1,12 +1,12 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))l(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&l(o)}).observe(document,{childList:!0,subtree:!0});function a(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(s){if(s.ep)return;s.ep=!0;const t=a(s);fetch(s.href,t)}})();function r(e){return`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))l(s);new MutationObserver(s=>{for(const e of s)if(e.type==="childList")for(const o of e.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&l(o)}).observe(document,{childList:!0,subtree:!0});function a(s){const e={};return s.integrity&&(e.integrity=s.integrity),s.referrerPolicy&&(e.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?e.credentials="include":s.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function l(s){if(s.ep)return;s.ep=!0;const e=a(s);fetch(s.href,e)}})();function r(t){return`
       <div class="column-4 mt-2">
         <div class="img-container">
-            <img src="${e.image}" class="poster-img">
-            <div class="bottom-left promo-offer">${e.discount}%</div>
+            <img src="${t.image}" class="poster-img">
+            <div class="bottom-left promo-offer">${t.discount}%</div>
         </div>
         <div class="group-container card-details">
-            <span>${e.title}</span>
-            <span>${e.price}$</span>
+            <span>${t.title}</span>
+            <span>${t.price}$</span>
         </div>
       </div>`}const n={image:"./poster_1.png",discount:26,title:"Call of Duty",price:99.98},c=r(n),d={image:"./poster_2.png",discount:50,title:"Dishonerd",price:20},p=r(d),m={image:"./poster_3.png",discount:16,title:"Manastorm",price:129.99},g=r(m);document.querySelector("#app").innerHTML=`
     <div class="background">
@@ -25,7 +25,7 @@
           <span class="material-symbols-outlined icon border">person</span>
         </div>
       </div>
-      <div class="container justify-content-center pt-0 pb-0">
+      <div class="container justify-content-center pt-0 pb-0 responsive">
         <div class="card-text-column">
           <ul class="card-text">
             <li onclick="toggle_card();">PC</li>
